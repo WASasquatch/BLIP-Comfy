@@ -22,7 +22,7 @@ VERSION = '0.0.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'transformers>=4.15.0', 'timm>=0.4.12', 'fairscale>=0.4.4',
+    'transformers>=4.15.0', 'timm>=0.4.12', 'fairscale>=0.4.4', 'pycocoevalcap'
 ]
 
 # What packages are optional?
