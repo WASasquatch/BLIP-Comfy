@@ -20,9 +20,12 @@ import os
 from urllib.parse import urlparse
 from timm.models.hub import download_cached_file
 
+from pathlib import Path
+LOCAL_PATH = Path(__file__).parent
+
 class BLIP_Base(nn.Module):
     def __init__(self,                 
-                 med_config = 'configs/med_config.json',  
+                 med_config = Path(LOCAL_PATH, 'configs/med_config.json'),  
                  image_size = 224,
                  vit = 'base',
                  vit_grad_ckpt = False,
@@ -77,7 +80,7 @@ class BLIP_Base(nn.Module):
         
 class BLIP_Decoder(nn.Module):
     def __init__(self,                 
-                 med_config = 'configs/med_config.json',  
+                 med_config = Path(LOCAL_PATH, 'configs/med_config.json'),  
                  image_size = 384,
                  vit = 'base',
                  vit_grad_ckpt = False,
