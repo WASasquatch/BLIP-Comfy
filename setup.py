@@ -19,7 +19,6 @@ EMAIL = 'jordanslost@gmail.com'
 AUTHOR = 'salesforce'
 REQUIRES_PYTHON = '>=3.8.0'
 VERSION = '0.0.1'
-PACKAGES = ['blip-python', 'blip-python.models', 'blip-python.configs', 'blip-python.data', 'blip-python.transform']
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -104,10 +103,9 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=PACKAGES,
     #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    # py_modules=['mypackage'],
+    py_modules=['blip-python'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
