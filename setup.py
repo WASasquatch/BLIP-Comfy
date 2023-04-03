@@ -103,10 +103,10 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    #packages=find_packages(include=[NAME, f'{NAME}.*']),
+    packages=find_packages(include=[NAME, f'{NAME}.*']),
     #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    py_modules=['blip', 'blip.**'],
+    #py_modules=['blip', 'blip.**'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
@@ -114,11 +114,11 @@ setup(
     install_requires=REQUIRED,
     extras_require=EXTRAS,
     include_package_data=True,
-    license='MIT',
+    license='BSD 3-Clause',
     classifiers=[
         # Trove classifiers
         # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: BSD 3-Clause "New" or "Revised" License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
