@@ -12,12 +12,12 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'blip-python'
+NAME = 'blip'
 DESCRIPTION = 'PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation'
 URL = 'https://github.com/WASasquatch/BLIP-Python'
 EMAIL = 'jordanslost@gmail.com'
 AUTHOR = 'salesforce'
-REQUIRES_PYTHON = '>=3.8.0'
+REQUIRES_PYTHON = '>=3.7,<4'
 VERSION = '0.0.1'
 
 # What packages are required for this module to be executed?
