@@ -17,7 +17,7 @@ DESCRIPTION = 'PyTorch code for BLIP: Bootstrapping Language-Image Pre-training 
 URL = 'https://github.com/WASasquatch/BLIP-Python'
 EMAIL = 'jordanslost@gmail.com'
 AUTHOR = 'salesforce'
-REQUIRES_PYTHON = '>=3.7,<4'
+REQUIRES_PYTHON = '>=3.9'
 VERSION = '0.0.1'
 
 # What packages are required for this module to be executed?
@@ -103,10 +103,10 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(include=[NAME, f'{NAME}.*']),
-    #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    #packages=find_packages(include=[NAME, f'{NAME}.*']),
+    packages=find_packages(include=[NAME, f'{NAME}}.**'], exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    #py_modules=['blip-python'],
+    #py_modules=['blip', 'blip.**'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
