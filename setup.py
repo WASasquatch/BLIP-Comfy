@@ -20,7 +20,7 @@ AUTHOR = 'salesforce'
 REQUIRES_PYTHON = '>=3.8.0'
 VERSION = '0.0.1'
 PACKAGES = { 
-            'module': ['examples/**'],
+            'blip-python': ['**/**'],
   },
 
 # What packages are required for this module to be executed?
