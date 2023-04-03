@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'blip'
+NAME = 'BLIP'
 DESCRIPTION = 'PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation'
 URL = 'https://github.com/WASasquatch/BLIP-Python'
 EMAIL = 'jordanslost@gmail.com'
@@ -103,10 +103,10 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(include=[NAME, f'{NAME}.*']),
+    #packages=find_packages(include=[NAME, f'{NAME}.*']),
     #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    #py_modules=['blip', 'blip.**'],
+    py_modules=[NAME, f'{NAME}.configs', f'{NAME}.data', f'{NAME}.models', f'{NAME}.transform'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
