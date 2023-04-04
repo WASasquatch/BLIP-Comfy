@@ -16,9 +16,12 @@ import torch.nn.functional as F
 
 from models.blip import create_vit, init_tokenizer, load_checkpoint
 
+from pathlib import Path
+LOCAL_PATH = Path(__file__).parent.parent
+
 class BLIP_Pretrain(nn.Module):
     def __init__(self,                 
-                 med_config = 'configs/bert_config.json',  
+                 med_config = Path(LOCAL_PATH, 'configs/med_config.json'),  
                  image_size = 224,
                  vit = 'base',
                  vit_grad_ckpt = False,
