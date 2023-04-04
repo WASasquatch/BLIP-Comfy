@@ -22,7 +22,7 @@ from timm.models.hub import download_cached_file
 
 from pathlib import Path
 LOCAL_PATH = Path(__file__).parent.parent
-print(LOCAL_PATH)
+print("LOCAL PATH:", LOCAL_PATH)
 
 class BLIP_Base(nn.Module):
     def __init__(self,                 
