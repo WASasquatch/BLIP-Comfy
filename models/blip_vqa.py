@@ -9,7 +9,7 @@ import numpy as np
 
 
 from pathlib import Path
-LOCAL_PATH = Path(__file__).parent
+LOCAL_PATH = Path(__file__).parent.parent
 
 class BLIP_VQA(nn.Module):
     def __init__(self,                 
