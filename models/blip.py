@@ -21,7 +21,7 @@ from urllib.parse import urlparse
 from timm.models.hub import download_cached_file
 
 from pathlib import Path
-LOCAL_PATH = Path(__file__).parent
+LOCAL_PATH = Path(__file__).parent.parent
 
 class BLIP_Base(nn.Module):
     def __init__(self,                 
